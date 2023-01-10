@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prathamesh-portfolio-website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/587acdda4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="container">
+        <nav>
+            <img src="F:\PRATHAMESH\gg\prathamesh-portfolio-website\prathameshlogo.png" class="logo">
+            <ul>
+                <div class="navitem">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact me</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="header-text">
+            
+            <p>Aspiring Full Stack Developer</p>
+            <h1>Hi, I'm <span>Prathamesh</span> <br>Patel from Mumbai</h1>
+
+        </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="F:\PRATHAMESH\gg\prathamesh-portfolio-website\prathamnewphoto.png" class="prathu">
+            </div>
+            <div class="about-col-2">
+                <img src="F:\PRATHAMESH\gg\prathamesh-portfolio-website\ABOUTMELOGOnew.png" alt="about me" class="aboutme"><br><br><br><br><br>
+                <h4 class="myself">Logical thinker with a domain as a full stack developer having extensive knowledge of python, html, css and a bit of javascript and C language, passionate about providing best features, updates and convinience. Keen to gain more experience and expressing art of perfection in this field.</h4>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" id="skill" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" id="cert" onclick="opentab('certification')">Certification</p>
+                    <p class="tab-links" id="edu" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>website making procedures</li>
+                        <li><span>Cloud Essential</span><br>Know some basics of cloud engineering</li>
+                        <li><span>Backend Development</span><br>Can do a bit of backend as well.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certification">
+                    <ul>
+                        <li><span>Microsoft Excel </span><br>basics of microsoft excel certification from coursera</li>
+                        <li><span>Cloud practioner essentials</span><br>cloud practioner certification from A.W.S.</li>
+                        <li><span>Python basics</span><br>Python basics certification from Hackerrank</li>
+                        <li><span>Problem solving</span><br>Certification from Hackerrank</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 ongoing</span><br>1st year btech CSE from Lovely Proffesional University</li>
+                        <li><span>2021</span><br>12th from B.N. Pawar junior college</li>
+                        <li><span>2019</span><br>10th from holy rose english school </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <div class="skill-services">
+    <div class="container">
+        <h1 class="sub-title">My Basic Technical skills</h1>
+        <div class="skill-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>I have learned python and made several backend projects with it. Expertise in core Python </p>
+                <a href="#" class="learn-more">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Html</h2>
+                <p>I have learned Html and made several Frontend projects with it. core language of all, enhance links and metadata. </p>
+                <a href="#" class="learn-more">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>Javascript</h2>
+                <p>I have learned Javascript and made several backend as well as frontend projects with it. It add complex features to any website making it interactive and interesting.</p>
+                <a href="#" class="learn-more">learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="" alt="portiofolionilubhabhio">
+            </div>
+
+        </div>
+    </div>
+  </div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+  </script>
+</body>
+</html>
